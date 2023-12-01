@@ -10,7 +10,7 @@ This project contains automated tests written in JavaScript using CodeceptJS in 
 ## Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/my-codeceptjs-tests.git
+git clone https://github.com/NavaG1/aqa_test_homework_navajeevan.git
 
 ## Project Structure
 my-codeceptjs-project/
@@ -34,10 +34,12 @@ npx codeceptjs run --steps
 
 allure serve output
 
-```bash
-make test
 
-This command runs CodeceptJS tests locally.
+At this moment, docker environment is setup.
+But when we run test script using docker, run fails as puppetter is unable to launch browser.
+I'm eagerly working to fix the problems and run tests via docker.
+
+
 
 Viewing Allure Report
 1. Install Allure Commandline globally:

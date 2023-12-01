@@ -1,0 +1,7 @@
+version: "3"
+services:
+  codeceptjs:
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app

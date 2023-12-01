@@ -1,0 +1,1981 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1701424785455' stop='1701424851455'>
+    <name>Testing Psychics on Oranum</name>
+    <title>Testing Psychics on Oranum</title>
+    <test-cases>
+        <test-case start='1701424786028' status='passed' stop='1701424790984'>
+            <name>Search for psychics by partial text {"partial_text":"Matt","expected_result":"MATT"} @search</name>
+            <title>Search for psychics by partial text {"partial_text":"Matt","expected_result":"MATT"} @search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@search'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424786069' status='passed' stop='1701424788861'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424786070' status='passed' stop='1701424788861'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424788861' status='passed' stop='1701424789520'>
+                    <name>When I search for 'Matt' ""</name>
+                    <title>When I search for 'Matt' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424788862' status='passed' stop='1701424789384'>
+                            <name>I fill field "//input[@placeholder='Search for Expert or category']", "Matt"</name>
+                            <title>I fill field "//input[@placeholder='Search for Expert or category']", "Matt"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424789384' status='passed' stop='1701424789519'>
+                            <name>I press key "Enter"</name>
+                            <title>I press key "Enter"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424789520' status='passed' stop='1701424790984'>
+                    <name>Then I should see results containing 'MATT' ""</name>
+                    <title>Then I should see results containing 'MATT' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424789520' status='passed' stop='1701424790977'>
+                            <name>I see "MATT"</name>
+                            <title>I see "MATT"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424790977' status='passed' stop='1701424790982'>
+                            <name>I see "MATT EXPERTS"</name>
+                            <title>I see "MATT EXPERTS"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424790982' status='passed' stop='1701424790984'>
+                            <name>I grab current url </name>
+                            <title>I grab current url </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424791000' status='passed' stop='1701424794379'>
+            <name>Search for psychics by partial text {"partial_text":"Myst","expected_result":"MYST"} @search</name>
+            <title>Search for psychics by partial text {"partial_text":"Myst","expected_result":"MYST"} @search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@search'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424791007' status='passed' stop='1701424792254'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424791007' status='passed' stop='1701424792253'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424792254' status='passed' stop='1701424792822'>
+                    <name>When I search for 'Myst' ""</name>
+                    <title>When I search for 'Myst' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424792254' status='passed' stop='1701424792704'>
+                            <name>I fill field "//input[@placeholder='Search for Expert or category']", "Myst"</name>
+                            <title>I fill field "//input[@placeholder='Search for Expert or category']", "Myst"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424792704' status='passed' stop='1701424792821'>
+                            <name>I press key "Enter"</name>
+                            <title>I press key "Enter"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424792822' status='passed' stop='1701424794379'>
+                    <name>Then I should see results containing 'MYST' ""</name>
+                    <title>Then I should see results containing 'MYST' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424792822' status='passed' stop='1701424794373'>
+                            <name>I see "MYST"</name>
+                            <title>I see "MYST"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424794373' status='passed' stop='1701424794378'>
+                            <name>I see "MYST EXPERTS"</name>
+                            <title>I see "MYST EXPERTS"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424794378' status='passed' stop='1701424794379'>
+                            <name>I grab current url </name>
+                            <title>I grab current url </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424794395' status='passed' stop='1701424797677'>
+            <name>Search for psychics by partial text {"partial_text":"Ann","expected_result":"ANN"} @search</name>
+            <title>Search for psychics by partial text {"partial_text":"Ann","expected_result":"ANN"} @search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@search'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424794406' status='passed' stop='1701424795670'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424794406' status='passed' stop='1701424795670'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424795670' status='passed' stop='1701424796171'>
+                    <name>When I search for 'Ann' ""</name>
+                    <title>When I search for 'Ann' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424795671' status='passed' stop='1701424796042'>
+                            <name>I fill field "//input[@placeholder='Search for Expert or category']", "Ann"</name>
+                            <title>I fill field "//input[@placeholder='Search for Expert or category']", "Ann"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424796042' status='passed' stop='1701424796171'>
+                            <name>I press key "Enter"</name>
+                            <title>I press key "Enter"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424796171' status='passed' stop='1701424797677'>
+                    <name>Then I should see results containing 'ANN' ""</name>
+                    <title>Then I should see results containing 'ANN' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424796171' status='passed' stop='1701424797673'>
+                            <name>I see "ANN"</name>
+                            <title>I see "ANN"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424797674' status='passed' stop='1701424797676'>
+                            <name>I see "ANN EXPERTS"</name>
+                            <title>I see "ANN EXPERTS"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424797676' status='passed' stop='1701424797677'>
+                            <name>I grab current url </name>
+                            <title>I grab current url </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424797688' status='passed' stop='1701424801082'>
+            <name>Search for psychics by partial text {"partial_text":"psy","expected_result":"PSY"} @search</name>
+            <title>Search for psychics by partial text {"partial_text":"psy","expected_result":"PSY"} @search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@search'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424797697' status='passed' stop='1701424798997'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424797697' status='passed' stop='1701424798997'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424798997' status='passed' stop='1701424799534'>
+                    <name>When I search for 'psy' ""</name>
+                    <title>When I search for 'psy' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424798998' status='passed' stop='1701424799416'>
+                            <name>I fill field "//input[@placeholder='Search for Expert or category']", "psy"</name>
+                            <title>I fill field "//input[@placeholder='Search for Expert or category']", "psy"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424799417' status='passed' stop='1701424799534'>
+                            <name>I press key "Enter"</name>
+                            <title>I press key "Enter"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424799534' status='passed' stop='1701424801082'>
+                    <name>Then I should see results containing 'PSY' ""</name>
+                    <title>Then I should see results containing 'PSY' ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424799534' status='passed' stop='1701424801069'>
+                            <name>I see "PSY"</name>
+                            <title>I see "PSY"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424801070' status='passed' stop='1701424801079'>
+                            <name>I see "PSY EXPERTS"</name>
+                            <title>I see "PSY EXPERTS"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424801079' status='passed' stop='1701424801081'>
+                            <name>I grab current url </name>
+                            <title>I grab current url </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424801104' status='passed' stop='1701424803272'>
+            <name>Validate 'Sign up' overlay triggers when "Get credits" is clicked @livestream</name>
+            <title>Validate 'Sign up' overlay triggers when "Get credits" is clicked @livestream</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@livestream'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424801109' status='passed' stop='1701424802138'>
+                    <name>Given I am on the livestream page of a live psychic to get credits ""</name>
+                    <title>Given I am on the livestream page of a live psychic to get credits ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424801109' status='passed' stop='1701424802138'>
+                            <name>I am on page "https://oranum.com/en/chat/LovePsychyicAnie"</name>
+                            <title>I am on page "https://oranum.com/en/chat/LovePsychyicAnie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424802138' status='passed' stop='1701424803027'>
+                    <name>When I trigger the Sign up overlay by clicking on credit button ""</name>
+                    <title>When I trigger the Sign up overlay by clicking on credit button ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424802138' status='passed' stop='1701424803019'>
+                            <name>I click "//a[normalize-space()='Get Credits']"</name>
+                            <title>I click "//a[normalize-space()='Get Credits']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424803027' status='passed' stop='1701424803272'>
+                    <name>Then the Sign up overlay should be displayed after clicking credit button ""</name>
+                    <title>Then the Sign up overlay should be displayed after clicking credit button ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424803027' status='passed' stop='1701424803032'>
+                            <name>I dont see current url equals "/"</name>
+                            <title>I dont see current url equals "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424803032' status='passed' stop='1701424803098'>
+                            <name>I see in current url "en/auth/sign-up"</name>
+                            <title>I see in current url "en/auth/sign-up"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424803098' status='passed' stop='1701424803124'>
+                            <name>I see element "//a[@class='signup-login-button']"</name>
+                            <title>I see element "//a[@class='signup-login-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424803125' status='passed' stop='1701424803128'>
+                            <name>I see "BENEFITS OF JOINING"</name>
+                            <title>I see "BENEFITS OF JOINING"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424803128' status='passed' stop='1701424803231'>
+                            <name>I see element "//span[@id='submit_text']"</name>
+                            <title>I see element "//span[@id='submit_text']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424803231' status='passed' stop='1701424803272'>
+                            <name>I see element "//input[@placeholder='Username']"</name>
+                            <title>I see element "//input[@placeholder='Username']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424803282' status='passed' stop='1701424806113'>
+            <name>Validate 'Sign up' overlay triggers when "Add to favorites button" is clicked @livestream</name>
+            <title>Validate 'Sign up' overlay triggers when "Add to favorites button" is clicked @livestream</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@livestream'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424803288' status='passed' stop='1701424805287'>
+                    <name>Given I am on the livestream page of a live psychic to add to favorites ""</name>
+                    <title>Given I am on the livestream page of a live psychic to add to favorites ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424803288' status='passed' stop='1701424804569'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424804569' status='passed' stop='1701424805286'>
+                            <name>I am on page "https://www.oranum.com/en/chat/immortaltruth"</name>
+                            <title>I am on page "https://www.oranum.com/en/chat/immortaltruth"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424805287' status='passed' stop='1701424806044'>
+                    <name>When I trigger the Sign up overlay by clicking on add to favorites buttons ""</name>
+                    <title>When I trigger the Sign up overlay by clicking on add to favorites buttons ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424805287' status='passed' stop='1701424806036'>
+                            <name>I click "//span[@class='item-with-popover']"</name>
+                            <title>I click "//span[@class='item-with-popover']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424806044' status='passed' stop='1701424806113'>
+                    <name>Then the Sign up overlay should be displayed after clicking add to favorites ""</name>
+                    <title>Then the Sign up overlay should be displayed after clicking add to favorites ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424806045' status='passed' stop='1701424806057'>
+                            <name>I dont see current url equals "/"</name>
+                            <title>I dont see current url equals "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424806057' status='passed' stop='1701424806059'>
+                            <name>I see in current url "en/auth/sign-up"</name>
+                            <title>I see in current url "en/auth/sign-up"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424806060' status='passed' stop='1701424806064'>
+                            <name>I see "BENEFITS OF JOINING"</name>
+                            <title>I see "BENEFITS OF JOINING"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424806064' status='passed' stop='1701424806091'>
+                            <name>I see element "//span[@id='submit_text']"</name>
+                            <title>I see element "//span[@id='submit_text']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424806091' status='passed' stop='1701424806104'>
+                            <name>I see element "//input[@placeholder='Username']"</name>
+                            <title>I see element "//input[@placeholder='Username']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424806104' status='passed' stop='1701424806112'>
+                            <name>I see element "//a[@class='signup-login-button']"</name>
+                            <title>I see element "//a[@class='signup-login-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424806112' status='passed' stop='1701424806112'>
+                            <name>I see current url equals "https://www.oranum.com/en/auth/sign-up"</name>
+                            <title>I see current url equals "https://www.oranum.com/en/auth/sign-up"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424806118' status='passed' stop='1701424809232'>
+            <name>Validate 'Sign up' overlay triggers when "Surprise button" is clicked @livestream</name>
+            <title>Validate 'Sign up' overlay triggers when "Surprise button" is clicked @livestream</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@livestream'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424806127' status='passed' stop='1701424808403'>
+                    <name>Given I am on the livestream page of a live psychic to surprise ""</name>
+                    <title>Given I am on the livestream page of a live psychic to surprise ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424806127' status='passed' stop='1701424807412'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424807412' status='passed' stop='1701424808403'>
+                            <name>I am on page "https://www.oranum.com/en/chat/PsychicBenz"</name>
+                            <title>I am on page "https://www.oranum.com/en/chat/PsychicBenz"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424808403' status='passed' stop='1701424809052'>
+                    <name>When I trigger the Sign up overlay by clicking on surprise buttons ""</name>
+                    <title>When I trigger the Sign up overlay by clicking on surprise buttons ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424808403' status='passed' stop='1701424809052'>
+                            <name>I click "//div[@data-testid='surprise-OranumSurprisesGlobe_LJ']"</name>
+                            <title>I click "//div[@data-testid='surprise-OranumSurprisesGlobe_LJ']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424809052' status='passed' stop='1701424809232'>
+                    <name>Then the Sign up overlay should be displayed after clicking on surprise buttons ""</name>
+                    <title>Then the Sign up overlay should be displayed after clicking on surprise buttons ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424809052' status='passed' stop='1701424809057'>
+                            <name>I see "Hey! Join for free to send me a Surprise"</name>
+                            <title>I see "Hey! Join for free to send me a Surprise"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424809057' status='passed' stop='1701424809066'>
+                            <name>I see element "//a[@id='mc_losu_login_link']"</name>
+                            <title>I see element "//a[@id='mc_losu_login_link']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424809066' status='passed' stop='1701424809073'>
+                            <name>I see element "#mc_losu_button"</name>
+                            <title>I see element "#mc_losu_button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424809073' status='passed' stop='1701424809081'>
+                            <name>I see element ".mc_dialog__header"</name>
+                            <title>I see element ".mc_dialog__header"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424809081' status='passed' stop='1701424809232'>
+                            <name>I click "#mc_losu_button"</name>
+                            <title>I click "#mc_losu_button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424809251' status='passed' stop='1701424812799'>
+            <name>Validate 'Sign up' overlay triggers when "Start Session button" is clicked @livestream</name>
+            <title>Validate 'Sign up' overlay triggers when "Start Session button" is clicked @livestream</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@livestream'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424809259' status='passed' stop='1701424811185'>
+                    <name>Given I am on the livestream page of a live psychic to start a session ""</name>
+                    <title>Given I am on the livestream page of a live psychic to start a session ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424809259' status='passed' stop='1701424810674'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424810674' status='passed' stop='1701424811185'>
+                            <name>I click ".swiper-wrapper"</name>
+                            <title>I click ".swiper-wrapper"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424811185' status='passed' stop='1701424812703'>
+                    <name>When I trigger the Sign up overlay by clicking on Start Session button ""</name>
+                    <title>When I trigger the Sign up overlay by clicking on Start Session button ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424811185' status='passed' stop='1701424812703'>
+                            <name>I click "//div[@id='mc_btn_start_private']"</name>
+                            <title>I click "//div[@id='mc_btn_start_private']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424812703' status='passed' stop='1701424812799'>
+                    <name>Then the Sign up overlay should be displayed after clicking start session ""</name>
+                    <title>Then the Sign up overlay should be displayed after clicking start session ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424812703' status='passed' stop='1701424812740'>
+                            <name>I see "Register now to join me for a Private Session and let's see together where your path may lead you."</name>
+                            <title>I see "Register now to join me for a Private Session and let's see together where your path may lead you."</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424812741' status='passed' stop='1701424812768'>
+                            <name>I see element "//a[@id='mc_losu_login_link']"</name>
+                            <title>I see element "//a[@id='mc_losu_login_link']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424812768' status='passed' stop='1701424812799'>
+                            <name>I see element "#mc_losu_button"</name>
+                            <title>I see element "#mc_losu_button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424812809' status='passed' stop='1701424816107'>
+            <name>Validate 'Sign up' overlay triggers when "Get coins button" is clicked @livestream</name>
+            <title>Validate 'Sign up' overlay triggers when "Get coins button" is clicked @livestream</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@livestream'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424812821' status='passed' stop='1701424814565'>
+                    <name>Given I am on the livestream page of a live psychic to get coins ""</name>
+                    <title>Given I am on the livestream page of a live psychic to get coins ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424812821' status='passed' stop='1701424814205'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424814205' status='passed' stop='1701424814565'>
+                            <name>I click ".swiper-wrapper"</name>
+                            <title>I click ".swiper-wrapper"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424814565' status='passed' stop='1701424816052'>
+                    <name>When I trigger the Sign up overlay by clicking on Get coins button button ""</name>
+                    <title>When I trigger the Sign up overlay by clicking on Get coins button button ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424814565' status='passed' stop='1701424816052'>
+                            <name>I click "//div[@class='mc_bonus_coin__face mc_bonus_coin__face--sideOne mc_is_horizontal_rotation']"</name>
+                            <title>I click "//div[@class='mc_bonus_coin__face mc_bonus_coin__face--sideOne mc_is_horizontal_rotation']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424816052' status='passed' stop='1701424816107'>
+                    <name>Then the Sign up overlay should be displayed after Get coins button ""</name>
+                    <title>Then the Sign up overlay should be displayed after Get coins button ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424816052' status='passed' stop='1701424816056'>
+                            <name>I see "Join now for Free"</name>
+                            <title>I see "Join now for Free"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424816057' status='passed' stop='1701424816060'>
+                            <name>I see "Benefits of membership"</name>
+                            <title>I see "Benefits of membership"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424816060' status='passed' stop='1701424816072'>
+                            <name>I see element "//button[@id='mc_signup_button']"</name>
+                            <title>I see element "//button[@id='mc_signup_button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424816072' status='passed' stop='1701424816080'>
+                            <name>I see element "//div[@class='mc_dialog__column--signup mc_dialog__column--m']"</name>
+                            <title>I see element "//div[@class='mc_dialog__column--signup mc_dialog__column--m']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424816080' status='passed' stop='1701424816107'>
+                            <name>I see element "//span[normalize-space()='Login here']"</name>
+                            <title>I see element "//span[normalize-space()='Login here']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424816113' status='passed' stop='1701424818740'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Astrology"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Astrology"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424816125' status='passed' stop='1701424817469'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424816125' status='passed' stop='1701424817469'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424817469' status='passed' stop='1701424818531'>
+                    <name>When I click on 'Astrology' topic ""</name>
+                    <title>When I click on 'Astrology' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424817469' status='passed' stop='1701424817803'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Astrology']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Astrology']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424817803' status='passed' stop='1701424818526'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424818526' status='passed' stop='1701424818530'>
+                            <name>I see in current url "astrology"</name>
+                            <title>I see in current url "astrology"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424818531' status='passed' stop='1701424818729'>
+                    <name>Then I should be on the 'Astrology' list page ""</name>
+                    <title>Then I should be on the 'Astrology' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424818531' status='passed' stop='1701424818727'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424818729' status='passed' stop='1701424818740'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424818729' status='passed' stop='1701424818734'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424818734' status='passed' stop='1701424818736'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424818752' status='passed' stop='1701424822078'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Tarot"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Tarot"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424818760' status='passed' stop='1701424820014'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424818760' status='passed' stop='1701424820013'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424820014' status='passed' stop='1701424820778'>
+                    <name>When I click on 'Tarot' topic ""</name>
+                    <title>When I click on 'Tarot' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424820014' status='passed' stop='1701424820230'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Tarot']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Tarot']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424820230' status='passed' stop='1701424820762'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424820762' status='passed' stop='1701424820778'>
+                            <name>I see in current url "tarot"</name>
+                            <title>I see in current url "tarot"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424820778' status='passed' stop='1701424822055'>
+                    <name>Then I should be on the 'Tarot' list page ""</name>
+                    <title>Then I should be on the 'Tarot' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424820779' status='passed' stop='1701424822052'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424822055' status='passed' stop='1701424822078'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424822055' status='passed' stop='1701424822065'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424822066' status='passed' stop='1701424822071'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424822096' status='passed' stop='1701424824983'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Clairvoyance"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Clairvoyance"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424822106' status='passed' stop='1701424823434'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424822106' status='passed' stop='1701424823434'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424823434' status='passed' stop='1701424824383'>
+                    <name>When I click on 'Clairvoyance' topic ""</name>
+                    <title>When I click on 'Clairvoyance' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424823434' status='passed' stop='1701424823820'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Clairvoyance']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Clairvoyance']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424823820' status='passed' stop='1701424824379'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424824379' status='passed' stop='1701424824383'>
+                            <name>I see in current url "clairvoyance"</name>
+                            <title>I see in current url "clairvoyance"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424824383' status='passed' stop='1701424824943'>
+                    <name>Then I should be on the 'Clairvoyance' list page ""</name>
+                    <title>Then I should be on the 'Clairvoyance' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424824383' status='passed' stop='1701424824942'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424824943' status='passed' stop='1701424824983'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424824943' status='passed' stop='1701424824979'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424824979' status='passed' stop='1701424824981'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424824999' status='passed' stop='1701424827830'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Dream interpretation"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Dream interpretation"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424825006' status='passed' stop='1701424826256'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424825006' status='passed' stop='1701424826256'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424826256' status='passed' stop='1701424827191'>
+                    <name>When I click on 'Dream interpretation' topic ""</name>
+                    <title>When I click on 'Dream interpretation' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424826256' status='passed' stop='1701424826572'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Dream interpretation']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Dream interpretation']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424826572' status='passed' stop='1701424827161'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424827161' status='passed' stop='1701424827191'>
+                            <name>I see in current url "dream+interpretation"</name>
+                            <title>I see in current url "dream+interpretation"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424827191' status='passed' stop='1701424827817'>
+                    <name>Then I should be on the 'Dream interpretation' list page ""</name>
+                    <title>Then I should be on the 'Dream interpretation' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424827191' status='passed' stop='1701424827814'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424827817' status='passed' stop='1701424827830'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424827817' status='passed' stop='1701424827827'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424827827' status='passed' stop='1701424827829'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424827856' status='passed' stop='1701424830706'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Healing"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Healing"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424827864' status='passed' stop='1701424829217'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424827864' status='passed' stop='1701424829217'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424829217' status='passed' stop='1701424830042'>
+                    <name>When I click on 'Healing' topic ""</name>
+                    <title>When I click on 'Healing' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424829217' status='passed' stop='1701424829547'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Healing']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Healing']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424829547' status='passed' stop='1701424830027'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424830027' status='passed' stop='1701424830042'>
+                            <name>I see in current url "healing"</name>
+                            <title>I see in current url "healing"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424830042' status='passed' stop='1701424830699'>
+                    <name>Then I should be on the 'Healing' list page ""</name>
+                    <title>Then I should be on the 'Healing' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424830042' status='passed' stop='1701424830698'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424830699' status='passed' stop='1701424830706'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424830699' status='passed' stop='1701424830704'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424830704' status='passed' stop='1701424830705'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424830713' status='passed' stop='1701424833641'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Crystals"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Crystals"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424830718' status='passed' stop='1701424832019'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424830718' status='passed' stop='1701424832019'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424832019' status='passed' stop='1701424833007'>
+                    <name>When I click on 'Crystals' topic ""</name>
+                    <title>When I click on 'Crystals' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424832019' status='passed' stop='1701424832385'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Crystals']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Crystals']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424832385' status='passed' stop='1701424832989'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424832989' status='passed' stop='1701424833007'>
+                            <name>I see in current url "crystals"</name>
+                            <title>I see in current url "crystals"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424833007' status='passed' stop='1701424833628'>
+                    <name>Then I should be on the 'Crystals' list page ""</name>
+                    <title>Then I should be on the 'Crystals' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424833007' status='passed' stop='1701424833625'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424833628' status='passed' stop='1701424833641'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424833628' status='passed' stop='1701424833637'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424833637' status='passed' stop='1701424833639'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424833655' status='passed' stop='1701424836346'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Mediumship"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Mediumship"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424833662' status='passed' stop='1701424834969'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424833662' status='passed' stop='1701424834969'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424834969' status='passed' stop='1701424835804'>
+                    <name>When I click on 'Mediumship' topic ""</name>
+                    <title>When I click on 'Mediumship' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424834969' status='passed' stop='1701424835319'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Mediumship']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Mediumship']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424835319' status='passed' stop='1701424835773'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424835773' status='passed' stop='1701424835804'>
+                            <name>I see in current url "mediumship"</name>
+                            <title>I see in current url "mediumship"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424835804' status='passed' stop='1701424836335'>
+                    <name>Then I should be on the 'Mediumship' list page ""</name>
+                    <title>Then I should be on the 'Mediumship' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424835804' status='passed' stop='1701424836333'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424836335' status='passed' stop='1701424836346'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424836335' status='passed' stop='1701424836344'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424836344' status='passed' stop='1701424836345'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424836357' status='passed' stop='1701424839144'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Crystal ball"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Crystal ball"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424836361' status='passed' stop='1701424837627'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424836361' status='passed' stop='1701424837627'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424837627' status='passed' stop='1701424838547'>
+                    <name>When I click on 'Crystal ball' topic ""</name>
+                    <title>When I click on 'Crystal ball' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424837627' status='passed' stop='1701424837991'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Crystal ball']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Crystal ball']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424837991' status='passed' stop='1701424838541'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424838541' status='passed' stop='1701424838547'>
+                            <name>I see in current url "crystal+ball"</name>
+                            <title>I see in current url "crystal+ball"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424838547' status='passed' stop='1701424839123'>
+                    <name>Then I should be on the 'Crystal ball' list page ""</name>
+                    <title>Then I should be on the 'Crystal ball' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424838547' status='passed' stop='1701424839117'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424839123' status='passed' stop='1701424839144'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424839123' status='passed' stop='1701424839139'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424839139' status='passed' stop='1701424839143'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424839174' status='passed' stop='1701424842378'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Numerology"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Numerology"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424839189' status='passed' stop='1701424840601'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424839189' status='passed' stop='1701424840601'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424840601' status='passed' stop='1701424841836'>
+                    <name>When I click on 'Numerology' topic ""</name>
+                    <title>When I click on 'Numerology' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424840601' status='passed' stop='1701424840966'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Numerology']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Numerology']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424840967' status='passed' stop='1701424841823'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424841823' status='passed' stop='1701424841836'>
+                            <name>I see in current url "numerology"</name>
+                            <title>I see in current url "numerology"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424841836' status='passed' stop='1701424842369'>
+                    <name>Then I should be on the 'Numerology' list page ""</name>
+                    <title>Then I should be on the 'Numerology' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424841836' status='passed' stop='1701424842367'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424842369' status='passed' stop='1701424842378'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424842369' status='passed' stop='1701424842376'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424842377' status='passed' stop='1701424842378'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424842392' status='passed' stop='1701424845332'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Runes"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Runes"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424842396' status='passed' stop='1701424843712'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424842396' status='passed' stop='1701424843712'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424843712' status='passed' stop='1701424844836'>
+                    <name>When I click on 'Runes' topic ""</name>
+                    <title>When I click on 'Runes' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424843712' status='passed' stop='1701424844116'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Runes']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Runes']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424844117' status='passed' stop='1701424844799'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424844799' status='passed' stop='1701424844835'>
+                            <name>I see in current url "runes"</name>
+                            <title>I see in current url "runes"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424844836' status='passed' stop='1701424845324'>
+                    <name>Then I should be on the 'Runes' list page ""</name>
+                    <title>Then I should be on the 'Runes' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424844836' status='passed' stop='1701424845322'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424845324' status='passed' stop='1701424845332'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424845324' status='passed' stop='1701424845330'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424845330' status='passed' stop='1701424845331'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424845345' status='passed' stop='1701424848616'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Palm reading"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Palm reading"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424845354' status='passed' stop='1701424847103'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424845354' status='passed' stop='1701424847103'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424847103' status='passed' stop='1701424848102'>
+                    <name>When I click on 'Palm reading' topic ""</name>
+                    <title>When I click on 'Palm reading' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424847103' status='passed' stop='1701424847250'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Palm reading']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Palm reading']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424847250' status='passed' stop='1701424848057'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424848058' status='passed' stop='1701424848102'>
+                            <name>I see in current url "palm+reading"</name>
+                            <title>I see in current url "palm+reading"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424848102' status='passed' stop='1701424848611'>
+                    <name>Then I should be on the 'Palm reading' list page ""</name>
+                    <title>Then I should be on the 'Palm reading' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424848102' status='passed' stop='1701424848610'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424848611' status='passed' stop='1701424848616'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424848611' status='passed' stop='1701424848614'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424848615' status='passed' stop='1701424848615'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1701424848623' status='passed' stop='1701424851434'>
+            <name>Selecting '&lt;topic>' should display matching psychics {"topic":"Energy work"} @topics</name>
+            <title>Selecting '&lt;topic>' should display matching psychics {"topic":"Energy work"} @topics</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@topics'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1701424848628' status='passed' stop='1701424849993'>
+                    <name>Given I am on the Oranum home page ""</name>
+                    <title>Given I am on the Oranum home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424848628' status='passed' stop='1701424849993'>
+                            <name>I am on page "https://www.oranum.com/en/"</name>
+                            <title>I am on page "https://www.oranum.com/en/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424849993' status='passed' stop='1701424851222'>
+                    <name>When I click on 'Energy work' topic ""</name>
+                    <title>When I click on 'Energy work' topic ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424849993' status='passed' stop='1701424850416'>
+                            <name>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Energy work']"</name>
+                            <title>I click "//a[contains(@class,'sidebar-filters-link')][normalize-space()='Energy work']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424850416' status='passed' stop='1701424851191'>
+                            <name>I wait for visible ".listpage-title", 10</name>
+                            <title>I wait for visible ".listpage-title", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424851191' status='passed' stop='1701424851222'>
+                            <name>I see in current url "energy+work"</name>
+                            <title>I see in current url "energy+work"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424851222' status='passed' stop='1701424851422'>
+                    <name>Then I should be on the 'Energy work' list page ""</name>
+                    <title>Then I should be on the 'Energy work' list page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424851222' status='passed' stop='1701424851419'>
+                            <name>I grab text from ".listpage-title"</name>
+                            <title>I grab text from ".listpage-title"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1701424851422' status='passed' stop='1701424851434'>
+                    <name>And I should see matching psychics without duplicates ""</name>
+                    <title>And I should see matching psychics without duplicates ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1701424851422' status='passed' stop='1701424851431'>
+                            <name>I wait for visible ".thumb--modern[data-type="performer"]", 10</name>
+                            <title>I wait for visible ".thumb--modern[data-type="performer"]", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1701424851431' status='passed' stop='1701424851433'>
+                            <name>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</name>
+                            <title>I execute script (selector) => {
+                                const names = [];
+                                const psychicElements = document.querySelectorAll(selector);
+                            
+                                psychicElements.forEach((element) => {
+                                  const nameElement = element.querySelector('.thumb-data-item--name-container .thumb-data-item--name');
+                                  if (nameElement) {
+                                    names.push(nameElement.textContent.trim());
+                                  }
+                                });
+                            
+                                return names;
+                              }, ".thumb--modern[data-type="performer"]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

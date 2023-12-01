@@ -1,0 +1,306 @@
+
+PS C:\Users\Navajeevan\aqa_test_homework_navajeevan> npx codeceptjs run --steps 
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Navajeevan\aqa_test_homework_navajeevan"
+
+Testing Psychics on Oranum --
+  Search for psychics by partial text {"partial_text":"Matt","expected_result":"MATT"} @search
+   Given I am on the Oranum home page ""
+   When I search for 'Matt' ""
+Notification did not appear within the specified timeout.
+   Then I should see results containing 'MATT' ""
+Notification did not appear within the specified timeout.
+  √ OK in 4954ms
+
+  Search for psychics by partial text {"partial_text":"Myst","expected_result":"MYST"} @search
+   Given I am on the Oranum home page ""
+   When I search for 'Myst' ""
+Notification did not appear within the specified timeout.
+   Then I should see results containing 'MYST' ""
+Notification did not appear within the specified timeout.
+  √ OK in 3379ms
+
+  Search for psychics by partial text {"partial_text":"Ann","expected_result":"ANN"} @search
+   Given I am on the Oranum home page ""
+   When I search for 'Ann' ""
+Notification did not appear within the specified timeout.
+   Then I should see results containing 'ANN' ""
+Notification did not appear within the specified timeout.
+  √ OK in 3282ms
+
+  Search for psychics by partial text {"partial_text":"psy","expected_result":"PSY"} @search
+   Given I am on the Oranum home page ""
+   When I search for 'psy' ""
+Notification did not appear within the specified timeout.
+   Then I should see results containing 'PSY' ""
+Notification did not appear within the specified timeout.
+  √ OK in 3393ms
+
+  Validate 'Sign up' overlay triggers when "Get credits" is clicked @livestream
+   Given I am on the livestream page of a live psychic to get credits ""
+   When I trigger the Sign up overlay by clicking on credit button ""
+Notification did not appear within the specified timeout.
+   Then the Sign up overlay should be displayed after clicking credit button ""
+Notification did not appear within the specified timeout.
+  √ OK in 2168ms
+
+  Validate 'Sign up' overlay triggers when "Add to favorites button" is clicked @livestream
+   Given I am on the livestream page of a live psychic to add to favorites ""
+   When I trigger the Sign up overlay by clicking on add to favorites buttons ""
+Notification did not appear within the specified timeout.
+   Then the Sign up overlay should be displayed after clicking add to favorites ""
+Notification did not appear within the specified timeout.
+  √ OK in 2831ms
+
+  Validate 'Sign up' overlay triggers when "Surprise button" is clicked @livestream
+   Given I am on the livestream page of a live psychic to surprise ""
+   When I trigger the Sign up overlay by clicking on surprise buttons ""
+Notification did not appear within the specified timeout.
+   Then the Sign up overlay should be displayed after clicking on surprise buttons ""
+Notification did not appear within the specified timeout.
+  √ OK in 3114ms
+
+  Validate 'Sign up' overlay triggers when "Start Session button" is clicked @livestream
+   Given I am on the livestream page of a live psychic to start a session ""
+   When I trigger the Sign up overlay by clicking on Start Session button ""
+Notification did not appear within the specified timeout.
+   Then the Sign up overlay should be displayed after clicking start session ""
+  √ OK in 3548ms
+
+  Validate 'Sign up' overlay triggers when "Get coins button" is clicked @livestream
+   Given I am on the livestream page of a live psychic to get coins ""
+   When I trigger the Sign up overlay by clicking on Get coins button button ""
+Notification did not appear within the specified timeout.
+   Then the Sign up overlay should be displayed after Get coins button ""
+  √ OK in 3298ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Astrology"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Astrology' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Astrology' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'GalActivate',
+  'LightOracle',
+  'OceanTree',
+  'CaldoTaro',
+  'LoveOcean',
+  'CarolinePsychic',
+  'PsychicElite',
+  'PsychicJohn',
+  'ReivinAlexandria',
+  'TyriesWorldTarot',
+  'LoveHealMaster',
+  'immortaltruth'
+]
+  √ OK in 2626ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Tarot"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Tarot' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Tarot' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'AlexMcI',          'AnnaSimone',
+  'thotem',           'Sensei',
+  'Jennywithlove',    'OpenChannel',
+  'MysticMilena',     'GalActivate',
+  'OccultMind',       'Essi',
+  'CaldoTaro',        'AnnaTros',
+  'ChooseEnergy',     'TyronC',
+  'WaterProphecy',    'LazlaSky',
+  'AliceWithLove',    'AlyciaRose',
+  'CarolinePsychic',  'PsychicElite',
+  'Seherezada82',     'AngelicEuphoria',
+  'jonathan69143',    'ReivinAlexandria',
+  'LoveHealMaster',   'karael',
+  'TyriesWorldTarot', 'LunaMonie',
+  'LoveHealerMishi',  'PsychicCodyRay'
+]
+  √ OK in 3326ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Clairvoyance"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Clairvoyance' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Clairvoyance' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'VenusPath',       'AnnaSimone',       'thotem',
+  'Sensei',          'OpenChannel',      'PsychicBenz',
+  'lovingangel24',   'NyxeLunarWitch',   'GalActivate',
+  'LightOracle',     'OceanTree',        'WaterProphecy',
+  'TyronC',          'ChooseEnergy',     'Marrywisdom',
+  'Almightyparo',    'mssaul',           'AliceWithLove',
+  'AlyciaRose',      'superpsychic',     'LoveExpert1971',
+  'Thespiritoflove', 'countessstarella', 'PsychicJohn',
+  'LoveDove477',     'psychicalex2',     'AngelicEuphoria',
+  'KingLionRead',    'LoveHealMaster',   'karael',
+  'CastingStars',    'KajsaLight',       'ladymirabella',
+  'ConnectingYou',   'immortaltruth',    'psyalisha',
+  'AngelinaEl',      'PsychicCodyRay'
+]
+  √ OK in 2887ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Dream interpretation"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Dream interpretation' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Dream interpretation' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'Essi',
+  'LightOracle',
+  'Almightyparo',
+  'PsychicElite',
+  'TurkishGypsyGirl',
+  'LazlaSky',
+  'LoveDove477',
+  'ReivinAlexandria',
+  'immortaltruth'
+]
+  √ OK in 2831ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Healing"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Healing' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Healing' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'Loverreturner',   'VenusPath',
+  'Sensei',          'PsychicBenz',
+  'NyxeLunarWitch',  'Essi',
+  'ChooseEnergy',    'Almightyparo',
+  'WaterProphecy',   'Marrywisdom',
+  'LazlaSky',        'KajsaLight',
+  'AngelicEuphoria', 'karael',
+  'TOZORORION99',    'psyalisha',
+  'LoveHealerMishi'
+]
+  √ OK in 2850ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Crystals"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Crystals' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Crystals' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'Ellabaronessa',   'ZenjiMaster',
+  'SummerRoselee',   'PsychicCouple',
+  'LoveDrNikki',     'ECSMEDIUM',
+  'MarleyGreen',     'DylanLionsburr',
+  'MChannell',       'Shefalirohila',
+  'LoveImmense',     'ZMermaidGoddess',
+  'Jasminsteven',    'DeeplyDillion',
+  'SunainaVasudeva', 'YaniLight',
+  'AwareNConscious', 'AstralRain',
+  'Miaworldoftarot', 'VikincaRosier',
+  'Mystiqqtarot',    'NightofVenus',
+  'TheStarrr',       'BohdiKnox',
+  'JessTheMystic',   'SpiritualLuna',
+  'LaceyKing',       'InsightfulLia'
+]
+  √ OK in 2928ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Mediumship"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Mediumship' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Mediumship' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'AlyciaRose',
+  'TurkishGypsyGirl',
+  'SunflowerMystic',
+  'ConnectingYou',
+  'CastingStars',
+  'ladymirabella',
+  'AngelinaEl'
+]
+  √ OK in 2691ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Crystal ball"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Crystal ball' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Crystal ball' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [ 'LunaMonie', 'TOZORORION99' ]
+  √ OK in 2788ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Numerology"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Numerology' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Numerology' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [ 'AngelinaEl', 'TyriesWorldTarot' ]
+  √ OK in 3204ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Runes"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Runes' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Runes' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [ 'TOZORORION99' ]
+  √ OK in 2940ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Palm reading"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Palm reading' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Palm reading' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'Soulworld',
+  'Ravennmoonivy',
+  'Ciaragreen',
+  'SnehaShiva',
+  'Bhawana',
+  'MrFrankie',
+  'PsychicJacob',
+  'ElizabethTheHelp',
+  'PsychicZainz',
+  'Psychichailey',
+  'FrankiesReadings'
+]
+  √ OK in 3270ms
+
+  Selecting '<topic>' should display matching psychics {"topic":"Energy work"} @topics
+   Given I am on the Oranum home page ""
+   When I click on 'Energy work' topic ""
+Notification did not appear within the specified timeout.
+   Then I should be on the 'Energy work' list page ""
+   And I should see matching psychics without duplicates ""
+Extracted psychic names: [
+  'VenusPath',        'OpenChannel',
+  'PsychicBenz',      'NyxeLunarWitch',
+  'OceanTree',        'TyronC',
+  'Marrywisdom',      'CarolinePsychic',
+  'TurkishGypsyGirl', 'KajsaLight',
+  'CastingStars',     'ladymirabella',
+  'ConnectingYou',    'LunaMonie',
+  'psyalisha',        'LoveHealerMishi',
+  'PsychicCodyRay'
+]
+  √ OK in 2811ms
+
+
+  OK  | 21 passed   // 1m
+PS C:\Users\Navajeevan\aqa_test_homework_navajeevan> allure serve output
+Generating report to temp directory...
+Report successfully generated to C:\Users\NAVAJE~1\AppData\Local\Temp\10121953734694210257\allure-report
+Starting web server...
+2023-12-01 11:01:27.230:INFO::main: Logging initialized @2157ms to org.eclipse.jetty.util.log.StdErrLog
+Server started at <http://192.168.178.68:59069/>. Press <Ctrl+C> to exit
+PS C:\Users\Navajeevan\aqa_test_homework_navajeevan> allure serve output
+Generating report to temp directory...
+Report successfully generated to C:\Users\NAVAJE~1\AppData\Local\Temp\14204415609899452110\allure-report
+Starting web server...
+2023-12-01 11:03:10.755:INFO::main: Logging initialized @1778ms to org.eclipse.jetty.util.log.StdErrLog
+Server started at <http://192.168.178.68:59438/>. Press <Ctrl+C> to exit

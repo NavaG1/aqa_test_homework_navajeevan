@@ -1,0 +1,287 @@
+Feature: Oranum Home page
+
+  Scenario Outline: Search for psychics by partial text
+    Given I am on the Oranum home page
+    When I search for '<partial_text>'
+    Then I should see results containing '<expected_result>'
+
+  Examples:
+    | partial_text | expected_result |
+    | Matt         | MATT            |
+    | Myst         | MYST            |
+    | Ann          | ANN             |
+    | psy          | PSY             |
+
+  Scenario: Validate 'Sign up' overlay triggers when "Get credits" is clicked
+    Given I am on the livestream page of a live psychic to get credits
+    When I trigger the Sign up overlay by clicking on credit button
+    Then the Sign up overlay should be displayed after clicking credit button
+
+  Scenario: Validate 'Sign up' overlay triggers when "Add to favorites button" is clicked
+    Given I am on the livestream page of a live psychic to add to favorites
+    When I trigger the Sign up overlay by clicking on add to favorites buttons
+    Then the Sign up overlay should be displayed after clicking add to favorites
+    
+  Scenario: Validate 'Sign up' overlay triggers when "Surprise button" is clicked
+    Given I am on the livestream page of a live psychic to surprise
+    When I trigger the Sign up overlay by clicking on surprise buttons
+    Then the Sign up overlay should be displayed after clicking on surprise buttons
+
+  Scenario: Validate 'Sign up' overlay triggers when "Start Session button" is clicked
+    Given I am on the livestream page of a live psychic to start a session
+    When I trigger the Sign up overlay by clicking on Start Session button
+    Then the Sign up overlay should be displayed after clicking start session
+
+const { I } = inject();
+
+Given('I am on the Oranum home page', () => {
+  I.amOnPage('/');
+  I.seeElement("//input[@placeholder='Search for Expert or category']")
+});
+
+When('I search for {string}', (partialText) => {
+  // Implement the search functionality
+  // You can use I.fillField, I.click, or any other CodeceptJS methods for interaction
+  // For example:
+  I.fillField("//input[@placeholder='Search for Expert or category']", partialText);
+  //I.click('#searchButton');
+  I.wait(2)
+  I.pressKey('Enter');
+});
+
+Then('I should see results containing {string}', (expectedResult) => {
+  // Implement the verification logic
+  // You can use I.see, I.seeElement, or any other CodeceptJS methods for verification
+  // For example:
+  I.see(expectedResult);
+});
+
+/////////////////////////////////////////////////////
+                    //Get Credits button///
+Given('I am on the livestream page of a live psychic to get credits', async() => {
+  
+  // I.amOnPage('/')
+  // await I.click(".swiper-wrapper")
+  I.amOnPage('https://oranum.com/en/chat/LovePsychyicAnie')
+  I.wait(5)
+});
+
+When('I trigger the Sign up overlay by clicking on credit button', async() => {
+  await I.click("//a[normalize-space()='Get Credits']");    //Get credit button
+  //I.acceptCookies();
+  I.wait(5)
+  // if (I.seeElement('#personalized-content-notification')) {
+  //   // Interact with the elements inside the popup container
+  //   I.click('#personalized-content-notification .notifier-personalized-content-agree-btn');
+  // }
+  // await I.click("//a[normalize-space()='Get Credits']"); 
+  });
+
+Then('the Sign up overlay should be displayed after clicking credit button', async() => {
+  I.wait(5)
+  await I.seeElement("//a[@class='signup-login-button']")
+  I.see("BENEFITS OF JOINING")
+  I.seeElement("//span[@id='submit_text']")
+  I.seeElement("//input[@placeholder='Username']")
+});
+
+///////////////////////////////////////////////////////////////////////////////////
+                              //Add to favorites button//
+Given('I am on the livestream page of a live psychic to add to favorites', async() => {
+  I.amOnPage('/')
+  // await I.click(".swiper-wrapper")
+  I.amOnPage('https://www.oranum.com/en/chat/immortaltruth')
+  I.wait(5)
+});
+
+When('I trigger the Sign up overlay by clicking on add to favorites buttons', async() => {
+  await I.click("//span[@class='item-with-popover']")   //Click on favourite button
+  //I.acceptCookies();
+  I.wait(5)
+  if (I.seeElement('#personalized-content-notification')) {
+    // Interact with the elements inside the popup container
+    I.click('#personalized-content-notification .notifier-personalized-content-agree-btn');
+  }
+  //await I.click("//span[@class='item-with-popover']")
+});
+
+Then('the Sign up overlay should be displayed after clicking add to favorites', () => {
+  I.wait(5)
+  I.see("BENEFITS OF JOINING")
+  I.seeElement("//span[@id='submit_text']")
+  I.seeElement("//input[@placeholder='Username']")
+  I.seeElement("//a[@class='signup-login-button']")
+  I.seeInCurrentUrl("https://www.oranum.com/en/auth/sign-up")
+  I.dontSeeCurrentUrlEquals("/")
+});
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+                //Surprise buttons//
+Given('I am on the livestream page of a live psychic to surprise', async() => {
+  I.amOnPage('/')
+  // await I.click(".swiper-wrapper")
+  I.amOnPage('https://www.oranum.com/en/chat/PsychicBenz')
+  I.wait(5) 
+});
+
+When('I trigger the Sign up overlay by clicking on surprise buttons', async() => {
+  await I.click("//div[@data-testid='surprise-OranumSurprisesGlobe_LJ']")
+  //I.acceptCookies();
+  I.wait(5)
+  if (I.seeElement('#personalized-content-notification')) {
+    // Interact with the elements inside the popup container
+    I.click('#personalized-content-notification .notifier-personalized-content-agree-btn');
+  }
+});
+
+Then('the Sign up overlay should be displayed after clicking on surprise buttons', async() => {
+  //I.waitForVisible('.mc_dialog--l.mc_dialog');
+  I.see("Hey! Join for free to send me a Surprise")
+  I.seeElement("//a[@id='mc_losu_login_link']")
+  I.seeElement("#mc_losu_button")
+  I.seeElement(".mc_dialog__header")
+  I.click('#mc_losu_button');
+  
+});
+//////////////////////////////////////////////////////////////////////////////////
+
+Given('I am on the livestream page of a live psychic to start a session', async() => {
+  I.amOnPage('/')
+  I.click(".swiper-wrapper") 
+});
+
+When('I trigger the Sign up overlay by clicking on Start Session button', async() => {
+  //I.click(".icon--close")
+  // if (I.seeElement('.notifier-wrapper')) {
+  //   I.acceptPopup();
+  // }
+  //await I.click(".mc_text.mc_text--bold.mc_text--little_action.mc_text--uppercase")
+  I.click("#mc_btn_start_private")
+  I.wait(5)
+  //I.cancelPopup();
+});
+
+Then('the Sign up overlay should be displayed after clicking start session', () => {
+  //I.cancelPopup();
+  I.see("Register now to join me for a Private Session and let's see together where your path may lead you.")
+  I.seeElement("//a[@id='mc_losu_login_link']")
+  I.seeElement("#mc_losu_button")
+});
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Use the official codeceptjs/codeceptjs image from Docker Hub
+FROM codeceptjs/codeceptjs
+
+# We don't need the standalone Chromium
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+
+# Install Google Chrome Stable and fonts
+# Note: this installs the necessary libs to make the browser work with Puppeteer.
+RUN apt-get update && \
+    apt-get install -y wget unzip && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set the cache path for Puppeteer
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+ENV PUPPETEER_EXECUTABLE_PATH /usr/src/app/.cache/puppeteer/chromium
+
+# Add app user
+RUN adduser --disabled-password --gecos "" app
+USER app
+
+# Set working directory
+WORKDIR /usr/src/app
+
+# Copy the rest of the application code to the container
+COPY . .
+
+# Change ownership during build
+USER root
+RUN chown -R app /usr/src/app
+
+# Create the output directory
+USER app
+RUN mkdir -p /usr/src/app/output
+
+# Give full permissions to all folders during build
+USER root
+RUN chmod -R 777 /usr/src/app
+
+# Change ownership of Puppeteer cache directory
+USER root
+# RUN chown -R app /usr/src/app/.cache
+RUN chown -R app:app /usr/src/app/.cache
+# Set permissions for the app user
+RUN chmod -R 777 /usr/src/app/.cache/puppeteer
+
+# Give full permissions to all folders at runtime
+USER app
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Set correct permissions for package-lock.json
+RUN chmod 664 package-lock.json
+
+# Install dependencies
+RUN npm cache clean --force && npm install --production
+RUN npm install --only=prod
+RUN npm install puppeteer --unsafe-perm=true --allow-root
+RUN apt-get update && \
+    apt-get install -y \
+      gconf-service \
+      libasound2 \
+      libatk1.0-0 \
+      libc6 \
+      libcairo2 \
+      libcups2 \
+      libdbus-1-3 \
+      libexpat1 \
+      libfontconfig1 \
+      libgcc1 \
+      libgconf-2-4 \
+      libgdk-pixbuf2.0-0 \
+      libglib2.0-0 \
+      libgtk-3-0 \
+      libnspr4 \
+      libpango-1.0-0 \
+      libpangocairo-1.0-0 \
+      libstdc++6 \
+      libx11-6 \
+      libx11-xcb1 \
+      libxcb1 \
+      libxcomposite1 \
+      libxcursor1 \
+      libxdamage1 \
+      libxext6 \
+      libxfixes3 \
+      libxi6 \
+      libxrandr2 \
+      libxrender1 \
+      libxss1 \
+      libxtst6 \
+      ca-certificates \
+      fonts-liberation \
+      libappindicator1 \
+      libnss3 \
+      lsb-release \
+      xdg-utils \
+      wget \
+      git && \
+    rm -rf /var/lib/apt/lists/*
+
+# Download and install Chrome
+RUN mkdir -p /usr/src/app/.cache/puppeteer/chromium && \
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list && \
+    apt-get update && \
+    apt-get install -y google-chrome-stable && \
+    rm -rf /var/lib/apt/lists/*
+
+CMD ["npx", "codeceptjs", "run"]
+
+

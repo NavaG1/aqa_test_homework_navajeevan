@@ -29,6 +29,11 @@ my-codeceptjs-project/
 
 ## Running Tests Locally
 
+npx codeceptjs run --steps
+##After test runs sucessfully, run below command to generate allure report.
+
+allure serve output
+
 ```bash
 make test
 
